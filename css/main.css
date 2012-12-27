@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+.middle {
+	margin-left: auto;
+	margin-right: auto;
+}
+#container {
+	margin: 0 auto;
+}
+#header {
+	width: 100%;
+	height: 30px;
+	/* border: 1px solid grey; */
+	position: absolute;
+	z-index: 99999;
+	margin-top: -5px;
+}
+
+#header .left-header {
+	float: left;
+}
+#header .right-header {
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+	padding: 8px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.right-header #setting-sync {
+	width: 30px;
+	height: 30px;
+}
+.right-header #help {
+	width: 30px;
+	height: 30px;
+}
+.right-header #sync-logo {
+	width: 24px;
+	height: 24px;
+	margin-right: 6px;
+}
+
+#main-container {
+	width: 100%;
+	min-height: 550px;
+	height: 100%;
+	/* border: 1px solid grey; */
+	background-image: url('../images/apple-1920x1200.jpg');
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	background-size: 100% auto;
+	position: relative;
+}
+
+#header img.note-icon {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px; 
+}
+
+#hidden-note.note {
+	z-index: -1;
+	margin-left : 300px;
+	margin-top: 150px;
+}
+
+.note {
+	width: 200px;
+	height: 200px;
+	clear: both;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 200px auto;
+    /* fit initial position error: */
+	display: inline-block;
+	position: absolute;
+}
+
+.note.color-yellow {
+	background-image: url('../images/note_yellow.png');
+}
+.note.color-green {
+	background-image: url('../images/note_green.png');
+}
+.note.color-purple {
+	background-image: url('../images/note_purple.png');
+}
+
+.note .title {
+	height: 35px;
+	width: 95%;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.note .content {
+	width: 92%;
+	height: 152px;
+	max-width: 92%;
+	max-height: 152px;
+	overflow-y: auto;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.note .menu {
+	width: 99%;
+	height: 30px;
+	margin-top: 4px;
+	background-color: rgba(0,0,0,0.3);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+}
+.note .menu button {
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.content:active {
+	border: 1px none transparent;
+}
+.content:focus {
+	border: 1px none transparent;
+}
+
+/* scrollbar */ 
+.content::-webkit-scrollbar {
+	width: 12px;
+}
+.content::-webkit-scrollbar-thumb {
+	-webkit-border-image: url("../images/scrollbar-thumb.png") 10 0 10 0 stretch stretch;
+	border-width: 10px 0px;
+	min-height: 20px;
+}
+.content::-webkit-scrollbar-track {
+	-webkit-border-image: url("../images/scrollbar-track.png") 12 0 12 0 stretch stretch;
+	border-width: 12px 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
