@@ -53,7 +53,6 @@ function DevelopDataBase () {
 }
 var database = DevelopDataBase();
 
-var info = $("#info");
 var main = $("#main-container");
 var noteIcon = $(".note-icon");
 var hiddenNote = $("#hidden-note");
@@ -172,8 +171,6 @@ Workspace = Backbone.Router.extend({
 						$(draggable).draggable("option", "revert", false);
 					} 
 				}
-				
-				info.text("drop: " + e + new Date());
 				return false;
 			}
 		});
