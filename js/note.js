@@ -192,7 +192,8 @@ Workspace = Backbone.Router.extend({
             text: false
       	}).click(function() {
       		$("#dialog-help").dialog({
-      			height: 140
+      			height: 240
+				, width: 400
       			, modal: true
       			, resizable: false
       		});
