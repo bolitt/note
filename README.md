@@ -13,8 +13,10 @@ http://bolitt.github.com/note
 
 
 ----
+
 Written purely in client-side technology:
--- HTML5: WebDB
--- javascript: jQuery & Backbone.js
+
+	* HTML5: WebDB
+	* javascript: jQuery & Backbone.js
 
 
