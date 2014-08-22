@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+	background-color: #301E05;
+}
+
 .middle {
 	margin-left: auto;
 	margin-right: auto;
@@ -45,11 +49,16 @@
 }
 
 #main-container {
-	width: 100%;
-	min-height: 550px;
-	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	width: 1440px;
+	height: 900px;
+	background-image: url('../images/wood-desk-wallpaper.jpg');
+	/* width: 100%; 
+		min-height: 550px; 
+		height: 100%; */
 	/* border: 1px solid grey; */
-	background-image: url('../images/apple-1920x1200.jpg');
+	/*background-image: url('../images/apple-1920x1200.jpg');*/
 	background-repeat: no-repeat;
 	background-color: #FFFFFF;
 	background-size: 100% auto;
